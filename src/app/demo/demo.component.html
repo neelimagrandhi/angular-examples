@@ -1,0 +1,33 @@
+<p>demo works!</p>
+<h1>hai</h1>
+<h2>neelima</h2>
+
+<!--interpolation-->
+<p>{{title}}</p>
+
+<!--property binding-->
+
+<span [innerHtml]=title></span>
+<br>
+
+<!--event binding-->
+<button (mouseenter)="m1('save product info')"
+(mouseleave)="m2()">
+hello
+</button>
+<br/>
+<h3 [style.color]=textcolor>
+    {{msg}}
+</h3>
+
+
+<div style ="font-size:x-large">
+    entername:<input [value]="name" (input)="name=$event.target.value"><br>
+    h1,{{name}}
+</div>
+
+<br/>
+enter price:<input [(ngModel)]="price">
+
+
+hhhh{{price}}
